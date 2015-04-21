@@ -1,0 +1,7 @@
+<h1>New Data File</h1>
+
+<%= simple_form_for @user, url: new_user_path do |form| %>
+  <%= form.input :avatar, as: :file %>
+<% end %>
+
+<%= link_to 'Back', data_files_path %>

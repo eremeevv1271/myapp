@@ -1,0 +1,13 @@
+<h1>Editing User</h1>
+
+<%= render 'form' %>
+
+<%= form_for @user, :url => user_path, :html => { :multipart => true } do |form| %>
+  <%= form.file_field :avatar %>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Show', @user %> |
+<%= link_to 'Back', users_path %>
